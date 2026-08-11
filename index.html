@@ -1,0 +1,857 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Abdur Rahman | Portfolio </title>
+  <meta name="description" content="Personal portfolio of Abdur Rahman, a Computer & Communication Engineering student interested in software development, artificial intelligence, machine learning, web technologies, and technology research.">
+  <meta name="keywords" content="Abdur Rahman, Computer and Communication Engineering, IIUC, software developer, machine learning, web development, portfolio">
+  <meta name="author" content="Abdur Rahman">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Abdur Rahman | Computer & Communication Engineering Student">
+  <meta property="og:description" content="Building technology, solving problems, exploring what's next — the portfolio of Abdur Rahman, CCE student at IIUC.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/images/profile.jpg">
+
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>&#128225;</text></svg>">
+
+  <!-- Fonts: Syne (display), DM Sans (body), JetBrains Mono (utility/mono) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=DM+Sans:ital,wght@0,400;0,500;0,600;1,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Skip link for accessibility -->
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <!-- Scroll progress indicator -->
+  <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+
+  <!--  NAVIGATION  -->
+  <header class="site-header" id="siteHeader">
+    <nav class="navbar" aria-label="Primary">
+      <a href="#home" class="nav-logo" aria-label="Abdur Rahman, home">
+        <span class="nav-logo-mark" aria-hidden="true">AR</span>
+        <span class="nav-logo-text">Abdur<span class="dot"> </span>Rahman</span>
+      </a>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home" class="nav-link active" data-section="home">Home</a></li>
+        <li><a href="#about" class="nav-link" data-section="about">About</a></li>
+        <li><a href="#skills" class="nav-link" data-section="skills">Skills</a></li>
+        <li><a href="#projects" class="nav-link" data-section="projects">Projects</a></li>
+        <li><a href="#research" class="nav-link" data-section="research">Research</a></li>
+        <li><a href="#education" class="nav-link" data-section="education">Education</a></li>
+        <li><a href="#certifications" class="nav-link" data-section="certifications">Certifications</a></li>
+        <li><a href="#contact" class="nav-link" data-section="contact">Contact</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <button id="themeToggle" class="theme-toggle" aria-label="Switch to light theme" aria-pressed="false">
+          <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+          <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 14.5A8.5 8.5 0 1 1 9.5 4a7 7 0 0 0 10.5 10.5z"/></svg>
+        </button>
+
+        <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="navLinks">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+
+    <!--  HERO  -->
+    <section class="hero" id="home">
+      <div class="hero-grid" aria-hidden="true"></div>
+      <div class="hero-glow" id="heroGlow" aria-hidden="true"></div>
+
+      <div class="container hero-inner">
+
+        <div class="hero-text">
+          <h1 class="hero-title">
+            Hi, I'm <span class="grad-text">Abdur Rahman</span>
+          </h1>
+
+          <p class="hero-role mono" id="typingRole" aria-live="polite">Computer &amp; Communication Engineering Student</p>
+
+          <svg class="signal-trace" viewBox="0 0 900 80" preserveAspectRatio="none" aria-hidden="true">
+            <polyline id="signalPath" points="0,40 60,40 90,10 120,70 150,40 220,40 250,20 280,60 310,40 400,40 430,15 460,65 490,40 600,40 630,25 660,55 690,40 900,40" />
+          </svg>
+
+          <p class="hero-tagline">Building Technology, Solving Problems, Exploring What&rsquo;s Next.</p>
+          <p class="hero-sub">Passionate about software development, AI, web technologies, and emerging technology &mdash; currently exploring machine learning, requirement engineering, and communication systems through academic and personal projects.</p>
+
+          <div class="hero-actions">
+            <a href="#projects" class="btn btn-primary">View My Projects</a>
+            <a href="assets/resume/Abdur_Rahman_Resume.pdf" class="btn btn-ghost" download>Download Resume</a>
+            <a href="#contact" class="btn btn-outline">Let&rsquo;s Connect</a>
+          </div>
+
+          <div class="hero-socials" aria-label="Social links">
+            <a href="https://github.com/abdurrahmancce" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile" class="social-link">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .5C5.65.5.5 5.66.5 12.02c0 5.09 3.29 9.4 7.86 10.93.58.1.79-.25.79-.56 0-.28-.01-1.02-.02-2-3.2.7-3.87-1.55-3.87-1.55-.53-1.34-1.28-1.7-1.28-1.7-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.2 1.77 1.2 1.03 1.76 2.7 1.25 3.36.96.1-.75.4-1.25.73-1.53-2.55-.29-5.23-1.28-5.23-5.7 0-1.26.45-2.29 1.19-3.1-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11 11 0 0 1 5.79 0c2.2-1.49 3.17-1.18 3.17-1.18.64 1.59.24 2.76.12 3.05.74.81 1.18 1.84 1.18 3.1 0 4.43-2.69 5.4-5.25 5.69.41.36.78 1.08.78 2.18 0 1.57-.02 2.84-.02 3.23 0 .31.21.67.8.56A10.53 10.53 0 0 0 23.5 12C23.5 5.66 18.35.5 12 .5Z"/></svg>
+            </a>
+            <a href="mailto:akash.abdur.2002@gmail.com" aria-label="Send an email" class="social-link">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 5h18a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1Zm0 2.4V18h18V7.4l-9 6.3-9-6.3ZM4.2 6l7.8 5.46L19.8 6H4.2Z"/></svg>
+            </a>
+            <a href="https://www.linkedin.com/in/abdur-rahman-akash26/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile" class="social-link">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5ZM3 9h4v12H3V9Zm7 0h3.83v1.64h.05c.53-1 1.83-2.06 3.77-2.06 4.03 0 4.77 2.65 4.77 6.1V21h-4v-5.6c0-1.34-.02-3.06-1.87-3.06-1.87 0-2.16 1.46-2.16 2.97V21h-4V9Z"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <button class="scroll-cue" id="scrollCue" aria-label="Scroll to About section">
+        <span></span>
+      </button>
+    </section>
+
+    <!--  ABOUT  -->
+    <section class="section" id="about">
+      <div class="container">
+        <h2 class="section-title">About Me</h2>
+
+        <div class="about-grid">
+          <div class="about-text">
+            <p>I'm a Computer &amp; Communication Engineering undergraduate at International Islamic University Chittagong (IIUC), currently in my 6th semester 3rd Year. My interest in technology stretches across software development, web engineering, artificial intelligence, machine learning, cybersecurity, and research &mdash; and I'm still very much in the process of figuring out where I want to specialize.</p>
+            <p>Most of what I know, I've picked up by building: working through coursework in databases and software engineering, shipping personal projects in Python and JavaScript, and slowly getting comfortable with the research process &mdash; reading papers, spotting gaps, and writing proposals of my own.</p>
+            <p>I care about understanding how things work under the hood rather than just making them work. That curiosity is what pulls me toward research alongside development, and it's the thread connecting most of the projects on this page.</p>
+            <div class="about-meta">
+              <div class="meta-item"><span class="meta-label mono">Based in</span><span>Chittagong, Bangladesh</span></div>
+              <div class="meta-item"><span class="meta-label mono">Studying</span><span>B.Sc. in CCE, IIUC</span></div>
+              <div class="meta-item"><span class="meta-label mono">Focus</span><span>Software &amp; AI, still exploring</span></div>
+            </div>
+          </div>
+
+          <div class="about-card glass reveal">
+            <div class="about-card-row"><span class="mono label">Student Name</span><span>Abdur Rahman</span></div>
+            <div class="about-card-row"><span class="mono label">Department</span><span>CCE</span></div>
+            <div class="about-card-row"><span class="mono label">Semester</span><span>6th</span></div>
+            <div class="about-card-row"><span class="mono label">Blood Group</span><span>O+</span></div>
+            <div class="about-card-row"><span class="mono label">University</span><span>IIUC</span></div>
+            <div class="about-card-row"><span class="mono label">Status</span><span class="status-pill">Actively learning</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--  SKILLS  -->
+    <section class="section section-alt" id="skills">
+      <div class="container">
+        <h2 class="section-title">Technical Skills</h2>
+        <p class="section-sub">A snapshot of what I use regularly and what I'm actively picking up &mdash; not a claim of mastery.</p>
+
+        <div class="skills-grid">
+
+          <div class="skill-card glass reveal">
+            <h3>Programming Languages</h3>
+            <ul class="skill-list">
+              <li><span>C</span><span class="tag tag-intermediate">Intermediate</span></li>
+              <li><span>C++</span><span class="tag tag-intermediate">Intermediate</span></li>
+              <li><span>Java</span><span class="tag tag-familiar">Familiar</span></li>
+              <li><span>Python</span><span class="tag tag-intermediate">Intermediate</span></li>
+              <li><span>JavaScript</span><span class="tag tag-intermediate">Intermediate</span></li>
+            </ul>
+          </div>
+
+          <div class="skill-card glass reveal">
+            <h3>Web Development</h3>
+            <ul class="skill-list">
+              <li><span>HTML5</span><span class="tag tag-intermediate">Intermediate</span></li>
+              <li><span>CSS3</span><span class="tag tag-intermediate">Intermediate</span></li>
+              <li><span>JavaScript</span><span class="tag tag-intermediate">Intermediate</span></li>
+              <li><span>Django</span><span class="tag tag-learning">Learning</span></li>
+              <li><span>React</span><span class="tag tag-learning">Learning</span></li>
+            </ul>
+          </div>
+
+          <div class="skill-card glass reveal">
+            <h3>Development Tools</h3>
+            <ul class="skill-list">
+              <li><span>Git</span><span class="tag tag-intermediate">Intermediate</span></li>
+              <li><span>GitHub</span><span class="tag tag-intermediate">Intermediate</span></li>
+              <li><span>VS Code</span><span class="tag tag-familiar">Familiar</span></li>
+              <li><span>NetBeans</span><span class="tag tag-familiar">Familiar</span></li>
+              <li><span>Eclipse</span><span class="tag tag-familiar">Familiar</span></li>
+              <li><span>Codeforces</span><span class="tag tag-exploring">Exploring</span></li>
+            </ul>
+          </div>
+
+          <div class="skill-card glass reveal">
+            <h3>AI, Data &amp; Research</h3>
+            <ul class="skill-list">
+              <li><span>Machine Learning</span><span class="tag tag-learning">Learning</span></li>
+              <li><span>Artificial Intelligence</span><span class="tag tag-exploring">Exploring</span></li>
+              <li><span>Computer Vision</span><span class="tag tag-exploring">Exploring</span></li>
+              <li><span>Data Science</span><span class="tag tag-learning">Learning</span></li>
+              <li><span>AI Automation</span><span class="tag tag-exploring">Exploring</span></li>
+              <li><span>NLP</span><span class="tag tag-exploring">Exploring</span></li>
+              <li><span>Software Engineering</span><span class="tag tag-intermediate">Intermediate</span></li>
+              <li><span>Requirement Analysis</span><span class="tag tag-learning">Learning</span></li>
+              <li><span>Technology Research</span><span class="tag tag-learning">Learning</span></li>
+            </ul>
+          </div>
+
+          <div class="skill-card glass reveal">
+            <h3>Other Interests</h3>
+            <ul class="skill-list">
+              <li><span>Cybersecurity</span><span class="tag tag-exploring">Exploring</span></li>
+              <li><span>Ethical Hacking</span><span class="tag tag-exploring">Exploring</span></li>
+              <li><span>IoT</span><span class="tag tag-exploring">Exploring</span></li>
+              <li><span>Computer Networks</span><span class="tag tag-familiar">Familiar</span></li>
+              <li><span>Communication Technology</span><span class="tag tag-familiar">Familiar</span></li>
+              <li><span>Database Management</span><span class="tag tag-intermediate">Intermediate</span></li>
+              <li><span>System Analysis &amp; Design</span><span class="tag tag-learning">Learning</span></li>
+              <li><span>Algorithms &amp; Data Structures</span><span class="tag tag-intermediate">Intermediate</span></li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!--  PROJECTS  -->
+    <section class="section" id="projects">
+      <div class="container">
+        <h2 class="section-title">Projects</h2>
+        <p class="section-sub">19 academic and personal builds spanning web apps, desktop tools, machine learning, databases, and games &mdash; most of them live on <a href="https://github.com/abdurrahmancce" target="_blank" rel="noopener noreferrer" class="inline-link">GitHub</a>.</p>
+
+        <div class="filter-bar" role="group" aria-label="Filter projects by category">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="web">Web Apps</button>
+          <button class="filter-btn" data-filter="ai">AI &amp; ML</button>
+          <button class="filter-btn" data-filter="desktop">Desktop Apps</button>
+          <button class="filter-btn" data-filter="games">Games</button>
+          <button class="filter-btn" data-filter="database">Database</button>
+          <button class="filter-btn" data-filter="academic">Academic</button>
+        </div>
+
+        <div class="projects-grid" id="projectsGrid">
+
+          <article class="project-card glass reveal" data-category="database academic">
+            <div class="project-icon icon-database" aria-hidden="true"><svg viewBox="0 0 24 24"><ellipse cx="12" cy="5" rx="8" ry="3"/><path d="M4 5v14c0 1.66 3.58 3 8 3s8-1.34 8-3V5"/><path d="M4 12c0 1.66 3.58 3 8 3s8-1.34 8-3"/></svg></div>
+            <div class="project-card-head">
+              <h3>Hotel Reservation System</h3>
+              <span class="tag tag-status">Academic</span>
+            </div>
+            <p>A relational database project modeling a full hotel workflow: hotels, room types, rooms, guests, staff, reservations, payments, services, reviews, and audit history.</p>
+            <div class="project-tech">
+              <span class="badge mono">MySQL</span><span class="badge mono">SQL</span><span class="badge mono">DBMS</span>
+            </div>
+            <ul class="project-features">
+              <li>ER diagram &amp; normalized relational schema</li>
+              <li>Views, functions, triggers &amp; transactions</li>
+              <li>Joins, aggregate functions &amp; subqueries</li>
+            </ul>
+            <div class="project-actions">
+              <a href="https://github.com/abdurrahmancce" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline">GitHub</a>
+              <button class="btn btn-sm btn-ghost project-details-btn" data-project="hotel">View Details</button>
+            </div>
+          </article>
+
+          <article class="project-card glass reveal" data-category="ai academic">
+            <div class="project-icon icon-ai" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 2a5 5 0 0 0-5 5c0 1.6.8 3 2 3.87V13a1 1 0 0 0 1 1h4a1 1 0 0 0 1-1v-2.13c1.2-.87 2-2.27 2-3.87a5 5 0 0 0-5-5Z"/><path d="M9 18h6M10 21h4"/></svg></div>
+            <div class="project-card-head">
+              <h3>Student Performance Prediction System</h3>
+              <span class="tag tag-status">Academic</span>
+            </div>
+            <p>A machine learning project predicting student academic outcomes from attendance, class test marks, midterm marks, and previous semester GPA.</p>
+            <div class="project-tech">
+              <span class="badge mono">Python</span><span class="badge mono">Pandas</span><span class="badge mono">Scikit-learn</span>
+            </div>
+            <ul class="project-features">
+              <li>Logistic regression classifier</li>
+              <li>Dataset of ~500 student records</li>
+              <li>Feature selection &amp; preprocessing pipeline</li>
+            </ul>
+            <div class="project-actions">
+              <a href="https://github.com/abdurrahmancce" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline">GitHub</a>
+              <button class="btn btn-sm btn-ghost project-details-btn" data-project="student">View Details</button>
+            </div>
+          </article>
+
+
+          <article class="project-card glass reveal" data-category="web academic">
+            <div class="project-icon icon-web" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18M9 21V9"/></svg></div>
+            <div class="project-card-head">
+              <h3>Course Management System / Mini LMS</h3>
+              <span class="tag tag-status">Academic</span>
+            </div>
+            <p>A learning management system for managing courses, users, and learning content with a full authentication and API layer.</p>
+            <div class="project-tech">
+              <span class="badge mono">Django</span><span class="badge mono">DRF</span><span class="badge mono">React</span><span class="badge mono">JWT</span>
+            </div>
+            <ul class="project-features">
+              <li>JWT-based authentication</li>
+              <li>REST API with student/instructor workflow</li>
+              <li>Frontend-backend integration</li>
+            </ul>
+            <div class="project-actions">
+              <a href="https://github.com/abdurrahmancce" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline">GitHub</a>
+              <button class="btn btn-sm btn-ghost project-details-btn" data-project="lms">View Details</button>
+            </div>
+          </article>
+
+          <article class="project-card glass reveal" data-category="web">
+            <div class="project-icon icon-web" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18M9 21V9"/></svg></div>
+            <div class="project-card-head">
+              <h3>Life Analytics Dashboard</h3>
+              <span class="tag tag-status">Personal</span>
+            </div>
+            <p>A browser-based dashboard that turns a day's logged activities into productivity trends, mood tracking, and a calendar heatmap &mdash; entirely offline via LocalStorage.</p>
+            <div class="project-tech">
+              <span class="badge mono">HTML</span><span class="badge mono">CSS</span><span class="badge mono">JavaScript</span><span class="badge mono">Chart.js</span>
+            </div>
+            <ul class="project-features">
+              <li>24-hour activity &amp; mood tracking</li>
+              <li>Offline-first with LocalStorage persistence</li>
+              <li>Interactive charts and a calendar heatmap</li>
+            </ul>
+            <div class="project-actions">
+              <a href="https://github.com/abdurrahmancce/Life-Tracking" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline">GitHub</a>
+              <button class="btn btn-sm btn-ghost project-details-btn" data-project="analytics">View Details</button>
+            </div>
+          </article>
+
+          <article class="project-card glass reveal" data-category="ai desktop">
+            <div class="project-icon icon-ai" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 2a5 5 0 0 0-5 5c0 1.6.8 3 2 3.87V13a1 1 0 0 0 1 1h4a1 1 0 0 0 1-1v-2.13c1.2-.87 2-2.27 2-3.87a5 5 0 0 0-5-5Z"/><path d="M9 18h6M10 21h4"/></svg></div>
+            <div class="project-card-head">
+              <h3>AI News Analyzer</h3>
+              <span class="tag tag-status">Personal</span>
+            </div>
+            <p>A Python/Tkinter desktop app that pulls live headlines from NewsAPI, generates AI-based article summaries, and scores each story's sentiment.</p>
+            <div class="project-tech">
+              <span class="badge mono">Python</span><span class="badge mono">Tkinter</span><span class="badge mono">Transformers</span><span class="badge mono">NewsAPI</span>
+            </div>
+            <ul class="project-features">
+              <li>Hugging Face summarization with an extractive fallback</li>
+              <li>Sentiment scoring via VADER, with TextBlob backup</li>
+              <li>Export reports to TXT and articles to CSV</li>
+            </ul>
+            <div class="project-actions">
+              <a href="https://github.com/abdurrahmancce/AI-News-Analyzer" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline">GitHub</a>
+              <button class="btn btn-sm btn-ghost project-details-btn" data-project="newsanalyzer">View Details</button>
+            </div>
+          </article>
+
+          <article class="project-card glass reveal" data-category="ai desktop">
+            <div class="project-icon icon-ai" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="12" rx="2"/><circle cx="9" cy="10" r="2"/><path d="M14 8v4M17 8v4"/><path d="M8 20h8"/></svg></div>
+            <div class="project-card-head">
+              <h3>Face Detection System</h3>
+              <span class="tag tag-status">Personal</span>
+            </div>
+            <p>A real-time face detection app built with Python and OpenCV, using Haar Cascade classifiers to detect faces, eyes, and smiles from a live webcam feed.</p>
+            <div class="project-tech">
+              <span class="badge mono">Python</span><span class="badge mono">OpenCV</span><span class="badge mono">Haar Cascade</span>
+            </div>
+            <ul class="project-features">
+              <li>Face, eye &amp; smile detection with toggles</li>
+              <li>Centroid tracking keeps stable IDs across frames</li>
+              <li>Manual and automatic snapshot capture</li>
+            </ul>
+            <div class="project-actions">
+              <a href="https://github.com/abdurrahmancce/Face-Detection-System" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline">GitHub</a>
+              <button class="btn btn-sm btn-ghost project-details-btn" data-project="face">View Details</button>
+            </div>
+          </article>
+
+          <article class="project-card glass reveal" data-category="desktop">
+            <div class="project-icon icon-desktop" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="13" rx="2"/><path d="M8 21h8M12 17v4"/></svg></div>
+            <div class="project-card-head">
+              <h3>System Information Viewer</h3>
+              <span class="tag tag-status">Personal</span>
+            </div>
+            <p>A Tkinter GUI that shows live CPU, RAM, disk, and OS details, auto-refreshing every second using psutil.</p>
+            <div class="project-tech">
+              <span class="badge mono">Python</span><span class="badge mono">Tkinter</span><span class="badge mono">psutil</span>
+            </div>
+            <ul class="project-features">
+              <li>Real-time CPU, RAM &amp; disk usage stats</li>
+              <li>Auto-refreshes every second</li>
+              <li>Dark-themed Tkinter interface</li>
+            </ul>
+            <div class="project-actions">
+              <a href="https://github.com/abdurrahmancce/System-Information-Viewer" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline">GitHub</a>
+            </div>
+          </article>
+
+          <article class="project-card glass reveal" data-category="desktop">
+            <div class="project-icon icon-desktop" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 12.55a11 11 0 0 1 14 0"/><path d="M1.42 9a16 16 0 0 1 21.16 0"/><path d="M8.53 16.11a6 6 0 0 1 6.95 0"/><circle cx="12" cy="20" r="1"/></svg></div>
+            <div class="project-card-head">
+              <h3>Nearby WiFi Scanner</h3>
+              <span class="tag tag-status">Personal</span>
+            </div>
+            <p>A small utility for detecting and listing nearby WiFi networks &mdash; an early, still-lightweight project I'm continuing to build out.</p>
+            <div class="project-tech">
+              <span class="badge mono">Python</span>
+            </div>
+            <ul class="project-features">
+              <li>Scans and lists nearby wireless networks</li>
+              <li>Documentation and features still being expanded</li>
+            </ul>
+            <div class="project-actions">
+              <a href="https://github.com/abdurrahmancce/Nearby-WiFi-Scanner" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline">GitHub</a>
+            </div>
+          </article>
+
+          <article class="project-card glass reveal" data-category="desktop academic">
+            <div class="project-icon icon-desktop" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 4h16v14H4z"/><path d="M4 9h16M9 4v14"/><circle cx="6.5" cy="6.5" r=".6" fill="currentColor"/></svg></div>
+            <div class="project-card-head">
+              <h3>Attendance Management System</h3>
+              <span class="tag tag-status">Academic</span>
+            </div>
+            <p>A desktop attendance system for schools and colleges, built with Python, Tkinter, and SQLite, with department-wise filtering and analytics.</p>
+            <div class="project-tech">
+              <span class="badge mono">Python</span><span class="badge mono">Tkinter</span><span class="badge mono">SQLite</span>
+            </div>
+            <ul class="project-features">
+              <li>Student records with department-wise filtering</li>
+              <li>Daily attendance logging &amp; history view</li>
+              <li>Exportable attendance statistics</li>
+            </ul>
+            <div class="project-actions">
+              <a href="https://github.com/abdurrahmancce/Attendance-Management-System" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline">GitHub</a>
+            </div>
+          </article>
+
+          <article class="project-card glass reveal" data-category="desktop">
+            <div class="project-icon icon-database" aria-hidden="true"><svg viewBox="0 0 24 24"><ellipse cx="12" cy="5" rx="8" ry="3"/><path d="M4 5v14c0 1.66 3.58 3 8 3s8-1.34 8-3V5"/><path d="M4 12c0 1.66 3.58 3 8 3s8-1.34 8-3"/></svg></div>
+            <div class="project-card-head">
+              <h3>Library Management System</h3>
+              <span class="tag tag-status">Personal</span>
+            </div>
+            <p>A Python command-line tool for managing library book records, driven by a simple script with text-based data storage.</p>
+            <div class="project-tech">
+              <span class="badge mono">Python</span>
+            </div>
+            <ul class="project-features">
+              <li>Command-line workflow via <code>manage.py</code></li>
+              <li>Book records stored in a plain text file</li>
+            </ul>
+            <div class="project-actions">
+              <a href="https://github.com/abdurrahmancce/Library-Management-System-" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline">GitHub</a>
+            </div>
+          </article>
+
+          <article class="project-card glass reveal" data-category="web">
+            <div class="project-icon icon-web" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg></div>
+            <div class="project-card-head">
+              <h3>Nimbus &mdash; Weather Dashboard</h3>
+              <span class="tag tag-status">Personal</span>
+            </div>
+            <p>A weather dashboard with live conditions, an hourly timeline, and a 3-day forecast, built entirely with vanilla JS against the key-free wttr.in API.</p>
+            <div class="project-tech">
+              <span class="badge mono">HTML</span><span class="badge mono">CSS</span><span class="badge mono">JavaScript</span>
+            </div>
+            <ul class="project-features">
+              <li>City search with &deg;C/&deg;F toggle</li>
+              <li>Hourly + 3-day forecast, sunrise &amp; sunset times</li>
+              <li>Glassmorphism UI with weather-based themes</li>
+            </ul>
+            <div class="project-actions">
+              <a href="https://github.com/abdurrahmancce/Weather-Dashboard" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline">GitHub</a>
+              <button class="btn btn-sm btn-ghost project-details-btn" data-project="weather">View Details</button>
+            </div>
+          </article>
+
+          <article class="project-card glass reveal" data-category="web academic">
+            <div class="project-icon icon-web" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18M9 21V9"/></svg></div>
+            <div class="project-card-head">
+              <h3>Student Grade Management System</h3>
+              <span class="tag tag-status">Academic</span>
+            </div>
+            <p>A browser-based tool for logging student records and automatically calculating grades and averages through an interactive dashboard.</p>
+            <div class="project-tech">
+              <span class="badge mono">HTML</span><span class="badge mono">CSS</span><span class="badge mono">JavaScript</span>
+            </div>
+            <ul class="project-features">
+              <li>Add student details &amp; subject marks</li>
+              <li>Automatic grade &amp; GPA calculation</li>
+              <li>Live demo hosted on GitHub Pages</li>
+            </ul>
+            <div class="project-actions">
+              <a href="https://github.com/abdurrahmancce/Student-Grade-Management-System-" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline">GitHub</a>
+              <a href="https://abdurrahmancce.github.io/Student-Grade-Management-System-/" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary">Live Demo</a>
+            </div>
+          </article>
+
+          <article class="project-card glass reveal" data-category="web">
+            <div class="project-icon icon-web" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg></div>
+            <div class="project-card-head">
+              <h3>Countdown Event Manager</h3>
+              <span class="tag tag-status">Personal</span>
+            </div>
+            <p>An interactive countdown manager for tracking multiple upcoming events at once &mdash; exams, launches, holidays, travel plans, and more.</p>
+            <div class="project-tech">
+              <span class="badge mono">HTML</span><span class="badge mono">CSS</span><span class="badge mono">JavaScript</span>
+            </div>
+            <ul class="project-features">
+              <li>Create, edit &amp; filter multiple live countdowns</li>
+              <li>Dark/light mode with LocalStorage persistence</li>
+              <li>Celebration animation when a countdown ends</li>
+            </ul>
+            <div class="project-actions">
+              <a href="https://github.com/abdurrahmancce/Countdown-Event-Manager" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline">GitHub</a>
+              <a href="https://abdurrahmancce.github.io/Countdown-Event-Manager/" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary">Live Demo</a>
+            </div>
+          </article>
+
+          <article class="project-card glass reveal" data-category="web">
+            <div class="project-icon icon-web" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg></div>
+            <div class="project-card-head">
+              <h3>To-Do Pro</h3>
+              <span class="tag tag-status">Personal</span>
+            </div>
+            <p>A feature-rich to-do app with a glassmorphism UI, priority tagging, and a full reminder/alarm system for staying on top of tasks.</p>
+            <div class="project-tech">
+              <span class="badge mono">HTML</span><span class="badge mono">CSS</span><span class="badge mono">JavaScript</span>
+            </div>
+            <ul class="project-features">
+              <li>Priority levels, due dates &amp; notes per task</li>
+              <li>Recurring reminders with browser notifications</li>
+              <li>Drag-and-drop with dark/light themes</li>
+            </ul>
+            <div class="project-actions">
+              <a href="https://github.com/abdurrahmancce/To-Do-Pro" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline">GitHub</a>
+            </div>
+          </article>
+
+          <article class="project-card glass reveal" data-category="web academic">
+            <div class="project-icon icon-web" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2Z"/></svg></div>
+            <div class="project-card-head">
+              <h3>Personal Result Tracker</h3>
+              <span class="tag tag-status">Academic</span>
+            </div>
+            <p>A results tracker that calculates GPA and CGPA automatically as courses are added, with color-coded indicators for quick review.</p>
+            <div class="project-tech">
+              <span class="badge mono">HTML</span><span class="badge mono">CSS</span><span class="badge mono">JavaScript</span>
+            </div>
+            <ul class="project-features">
+              <li>Automatic GPA &amp; CGPA calculation</li>
+              <li>Dynamic CGPA color indicators</li>
+              <li>LocalStorage persistence</li>
+            </ul>
+            <div class="project-actions">
+              <a href="https://github.com/abdurrahmancce/Personal-Result-Tracker" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline">GitHub</a>
+            </div>
+          </article>
+
+          <article class="project-card glass reveal" data-category="web">
+            <div class="project-icon icon-web" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M20 7h-3.5l-1-2h-7l-1 2H4a1 1 0 0 0-1 1v11a1 1 0 0 0 1 1h16a1 1 0 0 0 1-1V8a1 1 0 0 0-1-1Z"/><circle cx="12" cy="13" r="3.5"/></svg></div>
+            <div class="project-card-head">
+              <h3>Expense Tracker (Year-wise)</h3>
+              <span class="tag tag-status">Personal</span>
+            </div>
+            <p>A year-wise expense tracker built with HTML, CSS, and JavaScript for logging and reviewing spending over time.</p>
+            <div class="project-tech">
+              <span class="badge mono">HTML</span><span class="badge mono">CSS</span><span class="badge mono">JavaScript</span>
+            </div>
+            <ul class="project-features">
+              <li>Organizes expenses by year</li>
+              <li>Runs entirely in the browser, no backend</li>
+              <li>Deployed live via GitHub Pages</li>
+            </ul>
+            <div class="project-actions">
+              <a href="https://github.com/abdurrahmancce/Expense-Tracker-Year-wise-" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline">GitHub</a>
+              <a href="https://abdurrahmancce.github.io/Expense-Tracker-Year-wise-/" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary">Live Demo</a>
+            </div>
+          </article>
+
+          <article class="project-card glass reveal" data-category="games web">
+            <div class="project-icon icon-games" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="2" y="8" width="20" height="9" rx="4"/><path d="M7 10.5v4M5 12.5h4"/><circle cx="16" cy="11.5" r=".8" fill="currentColor"/><circle cx="18.5" cy="14" r=".8" fill="currentColor"/></svg></div>
+            <div class="project-card-head">
+              <h3>Tic-Tac-Toe Game</h3>
+              <span class="tag tag-status">Personal</span>
+            </div>
+            <p>A classic two-player Tic-Tac-Toe game playable entirely in the browser, no installation required.</p>
+            <div class="project-tech">
+              <span class="badge mono">HTML</span><span class="badge mono">CSS</span><span class="badge mono">JavaScript</span>
+            </div>
+            <ul class="project-features">
+              <li>3&times;3 grid with win, lose &amp; draw detection</li>
+              <li>Two-player mode with restart option</li>
+              <li>Live demo hosted on GitHub Pages</li>
+            </ul>
+            <div class="project-actions">
+              <a href="https://github.com/abdurrahmancce/Tic-Tac-Toe-Game-by-Web-Project" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline">GitHub</a>
+              <a href="https://abdurrahmancce.github.io/Tic-Tac-Toe-Game-by-Web-Project/" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary">Live Demo</a>
+            </div>
+          </article>
+
+          <article class="project-card glass reveal" data-category="games">
+            <div class="project-icon icon-games" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="2" y="8" width="20" height="9" rx="4"/><path d="M7 10.5v4M5 12.5h4"/><circle cx="16" cy="11.5" r=".8" fill="currentColor"/><circle cx="18.5" cy="14" r=".8" fill="currentColor"/></svg></div>
+            <div class="project-card-head">
+              <h3>Falling Delux Bar Game</h3>
+              <span class="tag tag-status">Personal</span>
+            </div>
+            <p>An arcade-style Python game where the player steers a falling bar to dodge incoming obstacles for as long as possible.</p>
+            <div class="project-tech">
+              <span class="badge mono">Python</span>
+            </div>
+            <ul class="project-features">
+              <li>Keyboard-controlled gameplay</li>
+              <li>Score increases the longer you survive</li>
+              <li>Built to practice game loops &amp; event handling</li>
+            </ul>
+            <div class="project-actions">
+              <a href="https://github.com/abdurrahmancce/Falling-Delux-Bar-Game" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline">GitHub</a>
+            </div>
+          </article>
+
+        </div>
+
+        <p class="filter-empty hidden" id="filterEmpty">No projects in this category yet &mdash; check back soon.</p>
+      </div>
+    </section>
+
+    <!--  RESEARCH & INTERESTS  -->
+    <section class="section section-alt" id="research">
+      <div class="container">
+        <h2 class="section-title">Research &amp; Technology Interests</h2>
+        <p class="section-sub-quote">I enjoy exploring technology beyond the classroom, especially areas where software, intelligent systems, communication technologies, and real-world problem solving intersect.</p>
+
+        <div class="interest-grid">
+          <div class="interest-card reveal"><span class="interest-icon" aria-hidden="true">◈</span><span>Artificial Intelligence</span></div>
+          <div class="interest-card reveal"><span class="interest-icon" aria-hidden="true">◈</span><span>Machine Learning</span></div>
+          <div class="interest-card reveal"><span class="interest-icon" aria-hidden="true">◈</span><span>Computer Vision</span></div>
+          <div class="interest-card reveal"><span class="interest-icon" aria-hidden="true">◈</span><span>Natural Language Processing</span></div>
+          <div class="interest-card reveal"><span class="interest-icon" aria-hidden="true">◈</span><span>Software Engineering</span></div>
+          <div class="interest-card reveal"><span class="interest-icon" aria-hidden="true">◈</span><span>Requirement Engineering</span></div>
+          <div class="interest-card reveal"><span class="interest-icon" aria-hidden="true">◈</span><span>Internet of Things</span></div>
+          <div class="interest-card reveal"><span class="interest-icon" aria-hidden="true">◈</span><span>Cybersecurity</span></div>
+          <div class="interest-card reveal"><span class="interest-icon" aria-hidden="true">◈</span><span>Computer Networks</span></div>
+          <div class="interest-card reveal"><span class="interest-icon" aria-hidden="true">◈</span><span>Communication Systems</span></div>
+          <div class="interest-card reveal"><span class="interest-icon" aria-hidden="true">◈</span><span>AI Automation</span></div>
+          <div class="interest-card reveal"><span class="interest-icon" aria-hidden="true">◈</span><span>Emerging Technologies</span></div>
+        </div>
+
+        <!-- Research Journey -->
+        <div class="research-journey">
+          <h3 class="journey-title">Exploring Technology Through Research</h3>
+          <p class="section-sub">I'm actively learning the research process itself &mdash; this is where that's headed:</p>
+          <ol class="journey-steps">
+            <li class="reveal"><span class="step-index mono">01</span><span>Reading academic papers</span></li>
+            <li class="reveal"><span class="step-index mono">02</span><span>Analyzing research problems</span></li>
+            <li class="reveal"><span class="step-index mono">03</span><span>Identifying research gaps</span></li>
+            <li class="reveal"><span class="step-index mono">04</span><span>Comparing existing approaches</span></li>
+            <li class="reveal"><span class="step-index mono">05</span><span>Working with datasets</span></li>
+            <li class="reveal"><span class="step-index mono">06</span><span>Designing experiments</span></li>
+            <li class="reveal"><span class="step-index mono">07</span><span>Evaluating ML approaches</span></li>
+            <li class="reveal"><span class="step-index mono">08</span><span>Developing research proposals</span></li>
+            <li class="reveal"><span class="step-index mono">09</span><span>Understanding academic publications</span></li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <!--  EDUCATION  -->
+    <section class="section" id="education">
+      <div class="container">
+        <h2 class="section-title">Education</h2>
+ 
+        <div class="timeline">
+          <div class="timeline-item reveal">
+            <div class="timeline-dot" aria-hidden="true"></div>
+            <div class="timeline-content glass">
+              <span class="tag tag-status">In progress</span>
+              <h3>B.Sc. in Computer &amp; Communication Engineering</h3>
+              <p class="timeline-org">International Islamic University Chittagong (IIUC)</p>
+              <p class="timeline-meta mono">Academic Year: 2024&ndash;2027 &middot; 6th Semester &middot; IIUC, Chittagong, Bangladesh</p>
+            </div>
+          </div>
+ 
+          <div class="timeline-item reveal">
+            <div class="timeline-dot" aria-hidden="true"></div>
+            <div class="timeline-content glass">
+              <span class="tag tag-status">Completed</span>
+              <h3>Higher Secondary Certificate (HSC)</h3>
+              <p class="timeline-org">Moulovi Shamsul Karim College</p>
+              <p class="timeline-meta mono">Completed: 2022</p>
+            </div>
+          </div>
+ 
+          <div class="timeline-item reveal">
+            <div class="timeline-dot" aria-hidden="true"></div>
+            <div class="timeline-content glass">
+              <span class="tag tag-status">Completed</span>
+              <h3>Secondary School Certificate (SSC)</h3>
+              <p class="timeline-org">Kashipur High School</p>
+              <p class="timeline-meta mono">Completed: 2020</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--  CERTIFICATIONS  -->
+    <section class="section section-alt" id="certifications">
+      <div class="container">
+        <h2 class="section-title">Certifications &amp; Workshops</h2>
+        <p class="section-sub">Workshops and self-directed training I've taken part in.</p>
+
+        <div class="cert-grid">
+          <div class="cert-card glass reveal">
+            <h3>Cyber Security &amp; Ethical Hacking</h3>
+            <span class="tag tag-status">Workshop / Training</span>
+          </div>
+          <div class="cert-card glass reveal">
+            <h3>Digital Marketing</h3>
+            <span class="tag tag-status">Workshop / Training</span>
+          </div>
+          <div class="cert-card glass reveal">
+            <h3>Python Programming</h3>
+            <span class="tag tag-status">Workshop / Training</span>
+          </div>
+          <div class="cert-card glass reveal">
+            <h3>AI Agent Development</h3>
+            <span class="tag tag-status">Workshop / Training</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--  GITHUB  -->
+    <section class="section" id="github">
+      <div class="container">
+        <h2 class="section-title">Code &amp; GitHub</h2>
+        <p class="section-sub">Most of my project history lives on GitHub &mdash; academic work, experiments, and personal builds.</p>
+
+        <div class="github-panel glass reveal">
+          <div class="github-panel-info">
+            <p class="mono github-user">@abdurrahmancce</p>
+            <p>Explore repositories covering database systems, machine learning experiments, and vanilla JS/HTML/CSS front-end projects.</p>
+            <div class="github-actions">
+              <a href="https://github.com/abdurrahmancce" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Explore My Code</a>
+              <a href="https://github.com/abdurrahmancce/abdurrahmancce" target="_blank" rel="noopener noreferrer" class="btn btn-outline">Profile README</a>
+            </div>
+          </div>
+          <div id="githubStats" class="github-stats mono" aria-live="polite">
+            <p class="github-stats-msg">GitHub activity loads automatically when this page is online.</p>
+          </div>
+        </div>
+
+        <div class="heatmap-card glass reveal">
+          <div class="heatmap-head">
+            <h3 id="heatmapTitle">Contribution Activity</h3>
+            <a href="https://github.com/abdurrahmancce" target="_blank" rel="noopener noreferrer" class="inline-link">View full history &rarr;</a>
+          </div>
+          <div class="heatmap-scroll">
+            <div id="heatmapGrid" class="heatmap-grid" aria-label="GitHub contribution calendar for the last year">
+              <p class="heatmap-loading" id="heatmapLoading">Loading contribution activity&hellip;</p>
+            </div>
+          </div>
+          <div class="heatmap-legend">
+            <span>Less</span>
+            <span class="legend-swatch" data-level="0"></span>
+            <span class="legend-swatch" data-level="1"></span>
+            <span class="legend-swatch" data-level="2"></span>
+            <span class="legend-swatch" data-level="3"></span>
+            <span class="legend-swatch" data-level="4"></span>
+            <span>More</span>
+          </div>
+          <p class="heatmap-fallback hidden" id="heatmapFallback">
+            The live contribution graph couldn't load right now &mdash; you can see it directly on
+            <a href="https://github.com/abdurrahmancce" target="_blank" rel="noopener noreferrer" class="inline-link">GitHub</a>.
+          </p>
+          <div id="heatmapTooltip" class="heatmap-tooltip" role="tooltip" hidden></div>
+        </div>
+      </div>
+    </section>
+
+    <!--  CONTACT  -->
+    <section class="section section-alt" id="contact">
+      <div class="container">
+        <h2 class="section-title">Let&rsquo;s Connect</h2>
+        <p class="section-sub">Have a question, a project idea, or just want to talk tech? Send a message below.</p>
+
+        <div class="contact-grid">
+          <div class="contact-info">
+            <div class="contact-info-item">
+              <span class="mono label">Personal</span>
+              <a href="mailto:akash.abdur.2002@gmail.com">akash.abdur.2002@gmail.com</a>
+            </div>
+            <div class="contact-info-item">
+              <span class="mono label">Academic</span>
+              <a href="mailto:e241018@ugrad.iiuc.ac.bd">e241018@ugrad.iiuc.ac.bd</a>
+            </div>
+            <div class="contact-info-item">
+              <span class="mono label">GitHub</span>
+              <a href="https://github.com/abdurrahmancce" target="_blank" rel="noopener noreferrer">github.com/abdurrahmancce</a>
+            </div>
+          </div>
+
+          <form id="contactForm" class="contact-form glass" novalidate>
+            <div class="form-row">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" autocomplete="name" required aria-required="true">
+              <span class="form-error" id="nameError" role="alert"></span>
+            </div>
+            <div class="form-row">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" autocomplete="email" required aria-required="true">
+              <span class="form-error" id="emailError" role="alert"></span>
+            </div>
+            <div class="form-row">
+              <label for="subject">Subject</label>
+              <input type="text" id="subject" name="subject" required aria-required="true">
+              <span class="form-error" id="subjectError" role="alert"></span>
+            </div>
+            <div class="form-row">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" required aria-required="true"></textarea>
+              <span class="form-error" id="messageError" role="alert"></span>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">Send Message</button>
+            <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!--  FOOTER  -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <span class="nav-logo-text">Abdur<span class="dot"> </span>Rahman</span>
+        <p>Computer &amp; Communication Engineering Student</p>
+      </div>
+
+      <ul class="footer-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#research">Research</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+
+      <div class="footer-socials">
+        <a href="https://github.com/abdurrahmancce" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile">GitHub</a>
+        <a href="mailto:akash.abdur.2002@gmail.com" aria-label="Send an email">Email</a>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p>&copy; <span id="footerYear"></span> Abdur Rahman. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">&uarr;</button>
+
+  <!--  PROJECT DETAILS MODAL  -->
+  <div class="modal-overlay" id="modalOverlay" hidden>
+    <div class="modal glass" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <button class="modal-close" id="modalClose" aria-label="Close details">&times;</button>
+      <h3 id="modalTitle"></h3>
+      <div id="modalBody"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
