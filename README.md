@@ -437,28 +437,6 @@ The focus is on:
 
 ---
 
-# 📬 Contact
-
-I'm always interested in learning, collaborating, discussing technology, and exploring meaningful project ideas.
-
-### 📧 Personal Email
-
-[![Personal Email](https://img.shields.io/badge/Email-akash.abdur.2002%40gmail.com-D14836?style=for-the-badge\&logo=gmail\&logoColor=white)](mailto:akash.abdur.2002@gmail.com)
-
-### 🎓 Academic Email
-
-[![Academic Email](https://img.shields.io/badge/Academic%20Email-e241018%40ugrad.iiuc.ac.bd-8B5CF6?style=for-the-badge\&logo=maildotru\&logoColor=white)](mailto:e241018@ugrad.iiuc.ac.bd)
-
-### 🐙 GitHub
-
-[![GitHub](https://img.shields.io/badge/GitHub-abdurrahmancce-181717?style=for-the-badge\&logo=github\&logoColor=white)](https://github.com/abdurrahmancce)
-
-### 💼 LinkedIn
-
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Abdur%20Rahman-0A66C2?style=for-the-badge\&logo=linkedin\&logoColor=white)](https://www.linkedin.com/in/abdur-rahman-akash26/)
-
----
-
 # 🎯 Current Focus
 
 Currently, I'm focusing on strengthening my foundations and gaining practical experience in:
@@ -498,6 +476,28 @@ My long-term goal is to grow into a strong technology professional capable of:
 * Solving real-world engineering problems
 * Contributing to open-source projects
 * Continuously learning emerging technologies
+
+---
+
+📬 Contact
+
+I'm always interested in learning, collaborating, discussing technology, and exploring meaningful project ideas.
+
+📧 Personal Email
+
+akash.abdur.2002@gmail.com
+
+🎓 Academic Email
+
+e241018@ugrad.iiuc.ac.bd
+
+🐙 GitHub
+
+https://github.com/abdurrahmanccee
+
+💼 LinkedIn
+
+https://www.linkedin.com/in/abdur-rahman-akash26/
 
 ---
 
