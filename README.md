@@ -491,13 +491,11 @@ akash.abdur.2002@gmail.com
 
 e241018@ugrad.iiuc.ac.bd
 
-🐙 GitHub
 
-https://github.com/abdurrahmanccee
 
-💼 LinkedIn
+[![GitHub](https://img.shields.io/badge/GitHub-abdurrahmancce-181717?style=for-the-badge&logo=github)](https://github.com/abdurrahmancce)
 
-https://www.linkedin.com/in/abdur-rahman-akash26/
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Abdur%20Rahman-0A66C2?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/in/abdur-rahman-akash26/)
 
 ---
 
