@@ -58,16 +58,6 @@ I believe meaningful technical growth comes from building real projects and unde
 
 ---
 
-## 🖼️ Portfolio Preview
-
-<p align="center">
-  <img src="assets/screenshots/hero.png" width="32%" alt="Hero Section">
-  <img src="assets/screenshots/projects.png" width="32%" alt="Projects Section">
-  <img src="assets/screenshots/contact.png" width="32%" alt="Contact Section">
-</p>
-
----
-
 # 📁 Project Structure
 
 ```text
