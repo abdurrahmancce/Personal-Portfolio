@@ -435,16 +435,28 @@ The project intentionally uses a lightweight frontend architecture.
 
 ---
 
+## 📄 License
+
+This project is open-source and available under the **MIT License**.
+
+---
+
 # 🤝 Let's Connect
 
 If you are interested in:
 
 💡 Technology
+
 🤖 AI / ML
+
 💻 Software Development
+
 🔬 Research
+
 🌐 Web Development
+
 📡 Communication Technology
+
 🚀 Interesting Project Ideas
 
 feel free to connect with me.
