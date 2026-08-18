@@ -435,9 +435,19 @@ The project intentionally uses a lightweight frontend architecture.
 
 ---
 
-## 📄 License
+## License
 
-This project is open-source and available under the **MIT License**.
+Copyright © 2026 Abdur Rahman. All Rights Reserved.
+
+This repository is publicly available for viewing and educational
+reference. No permission is granted to copy, modify, distribute,
+reproduce, publish, or commercially use the source code without
+prior written permission from the author.
+
+For permission requests, please contact the author.
+
+**Abdur Rahman**  
+📧 akash.abdur.2002@gmail.com
 
 ---
 
