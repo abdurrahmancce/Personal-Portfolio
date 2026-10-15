@@ -480,12 +480,23 @@
     });
   }
 
-  /* 
-     Contact form validation (frontend-only; no real send)
+  /*
+     Contact form — validated client-side, then actually delivered via
+     Web3Forms (https://web3forms.com), a free service built exactly for
+     static/no-backend sites: the browser POSTs directly to their API with
+     an access key, and they relay the message to the owner's real inbox.
+     No server code or secret key is needed — the "access key" is a public,
+     write-only token safe to ship in frontend JS (it can only submit forms
+     tied to the account that created it, never read anything back).
+     If the request fails for any reason (offline, key not set up yet,
+     service hiccup), we fall back to a mailto: link so the message can
+     still reach an inbox some other way.
       */
   function initContactForm() {
     const form = document.getElementById("contactForm");
     if (!form) return;
+
+    const WEB3FORMS_ENDPOINT = "https://api.web3forms.com/submit";
 
     const fields = {
       name: { el: document.getElementById("name"), error: document.getElementById("nameError") },
@@ -495,6 +506,7 @@
     };
 
     const statusEl = document.getElementById("formStatus");
+    const submitBtn = form.querySelector('button[type="submit"]');
     const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
     function setError(fieldKey, message) {
@@ -543,7 +555,15 @@
       return isValid;
     }
 
-    form.addEventListener("submit", (e) => {
+    function buildMailtoFallback(name, email, subject, message) {
+      return (
+        "mailto:akash.abdur.2002@gmail.com" +
+        "?subject=" + encodeURIComponent(subject) +
+        "&body=" + encodeURIComponent(`From: ${name} (${email})\n\n${message}`)
+      );
+    }
+
+    form.addEventListener("submit", async (e) => {
       e.preventDefault();
 
       if (!validate()) {
@@ -552,34 +572,67 @@
         return;
       }
 
-      // This is a frontend-only project: there is no backend to send mail.
-      // We confirm success in the UI and offer a mailto: fallback so the
-      // message can still reach an inbox.
       const name = fields.name.el.value.trim();
       const email = fields.email.el.value.trim();
       const subject = fields.subject.el.value.trim();
       const message = fields.message.el.value.trim();
+      const accessKey = (form.querySelector('input[name="access_key"]') || {}).value || "";
+      const mailtoLink = buildMailtoFallback(name, email, subject, message);
 
-      const mailtoLink =
-        "mailto:akash.abdur.2002@gmail.com" +
-        "?subject=" + encodeURIComponent(subject) +
-        "&body=" + encodeURIComponent(`From: ${name} (${email})\n\n${message}`);
+      // The key is still the unfilled placeholder: nothing to submit to yet.
+      if (!accessKey || accessKey === "YOUR_ACCESS_KEY_HERE") {
+        statusEl.innerHTML =
+          "This form isn't connected to an email service yet. " +
+          '<a href="' + mailtoLink + '">Click here to send your message via your email app</a> instead.';
+        statusEl.className = "form-status error";
+        return;
+      }
 
-      statusEl.innerHTML =
-        'Thanks, ' + escapeHtml(name) + "! Your message looks good. " +
-        '<a href="' + mailtoLink + '">Click here to send it via your email app</a>, ' +
-        "since this page can't send mail on its own.";
-      statusEl.className = "form-status success";
+      if (submitBtn) {
+        submitBtn.disabled = true;
+        submitBtn.textContent = "Sending…";
+      }
+      statusEl.textContent = "Sending your message…";
+      statusEl.className = "form-status";
 
-      form.reset();
+      try {
+        const response = await fetch(WEB3FORMS_ENDPOINT, {
+          method: "POST",
+          headers: { "Content-Type": "application/json", Accept: "application/json" },
+          body: JSON.stringify({
+            access_key: accessKey,
+            name: name,
+            email: email,
+            subject: subject,
+            message: message,
+            from_name: "Abdur Rahman — Portfolio Contact Form",
+          }),
+        });
+
+        const result = await response.json();
+
+        if (response.ok && result.success) {
+          statusEl.textContent =
+            "Thanks, " + name + "! Your message has been sent — I'll get back to you soon.";
+          statusEl.className = "form-status success";
+          form.reset();
+        } else {
+          throw new Error((result && result.message) || "Delivery failed");
+        }
+      } catch (err) {
+        // Delivery failed (offline, service issue, misconfigured key, etc.)
+        // — offer the mailto fallback so the message isn't lost.
+        statusEl.innerHTML =
+          "Couldn't send that automatically. " +
+          '<a href="' + mailtoLink + '">Click here to send it via your email app</a> instead.';
+        statusEl.className = "form-status error";
+      } finally {
+        if (submitBtn) {
+          submitBtn.disabled = false;
+          submitBtn.textContent = "Send Message";
+        }
+      }
     });
-
-    // Basic HTML escaping for the one place we inject user text as innerHTML.
-    function escapeHtml(str) {
-      const div = document.createElement("div");
-      div.textContent = str;
-      return div.innerHTML;
-    }
   }
 
   /* 
