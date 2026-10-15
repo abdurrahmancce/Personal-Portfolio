@@ -142,7 +142,6 @@
             <div class="about-card-row"><span class="mono label">Student Name</span><span>Abdur Rahman</span></div>
             <div class="about-card-row"><span class="mono label">Department</span><span>CCE</span></div>
             <div class="about-card-row"><span class="mono label">Semester</span><span>6th</span></div>
-            <div class="about-card-row"><span class="mono label">Blood Group</span><span>O+</span></div>
             <div class="about-card-row"><span class="mono label">University</span><span>IIUC</span></div>
             <div class="about-card-row"><span class="mono label">Status</span><span class="status-pill">Actively learning</span></div>
           </div>
@@ -799,6 +798,11 @@
             <!-- Web3Forms delivery — access key tied to akash.abdur.2002@gmail.com -->
             <input type="hidden" name="access_key" value="90f05d15-fa33-4780-bea4-aeb795d985ee">
             <input type="hidden" name="from_name" value="Portfolio contact form — abdurrahmancce.github.io/Personal-Portfolio">
+            <!-- Honeypot: invisible to people, but spam bots fill it in. Real visitors never touch it. -->
+            <div aria-hidden="true" style="position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden;">
+              <label for="botcheck">Leave this field empty</label>
+              <input type="checkbox" id="botcheck" name="botcheck" tabindex="-1" autocomplete="off">
+            </div>
             <div class="form-row">
               <label for="name">Name</label>
               <input type="text" id="name" name="name" autocomplete="name" required aria-required="true">

@@ -579,6 +579,15 @@
       const accessKey = (form.querySelector('input[name="access_key"]') || {}).value || "";
       const mailtoLink = buildMailtoFallback(name, email, subject, message);
 
+      // Honeypot: a bot ticked the invisible checkbox. Pretend success, send nothing.
+      const honeypot = form.querySelector('input[name="botcheck"]');
+      if (honeypot && honeypot.checked) {
+        statusEl.textContent = "Thanks! Your message has been sent.";
+        statusEl.className = "form-status success";
+        form.reset();
+        return;
+      }
+
       // The key is still the unfilled placeholder: nothing to submit to yet.
       if (!accessKey || accessKey === "YOUR_ACCESS_KEY_HERE") {
         statusEl.innerHTML =
@@ -606,6 +615,7 @@
             subject: subject,
             message: message,
             from_name: "Abdur Rahman — Portfolio Contact Form",
+            botcheck: false, // Web3Forms also rejects submissions where this is true
           }),
         });
 
