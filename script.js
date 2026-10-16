@@ -409,6 +409,16 @@
           "<p>A full-stack farm management web application for monitoring weather, calculating fertilizer needs, tracking farm locations, and reviewing analytics.</p>" +
           "<p><strong>Built with:</strong> Flask and PostgreSQL on the backend, JavaScript on the frontend, and Leaflet with OpenStreetMap for location tracking, delivered as a progressive web app.</p>",
       },
+      expense: {
+        title: "Expense Tracker",
+        body:
+          "<p>A responsive personal finance web app for recording expenses and income, reviewing spending through charts, and keeping each user data private behind a login.</p>" +
+          "<p><strong>Accounts:</strong> Firebase Authentication handles sign-up, email/password login, logout, and password reset. Records are stored per user in Cloud Firestore.</p>" +
+          "<p><strong>Expenses:</strong> each entry has an item, amount, category, date, and optional note. Entries can be searched, filtered by category or month, and sorted by date or amount. Categories are customizable, and frequently used items can be pinned for faster entry.</p>" +
+          "<p><strong>Income &amp; insights:</strong> a separate income tracker, monthly and yearly summaries, and Chart.js charts for spending by month, year, and category.</p>" +
+          "<p><strong>Extras:</strong> PDF export (jsPDF) and Excel export (SheetJS), a trash that keeps deleted records for 7 days so they can be restored, dark mode, and an installable PWA with offline caching. Older browser-stored data can be migrated into the account.</p>" +
+          "<p><strong>Built with:</strong> HTML, CSS, vanilla JavaScript, Firebase, and Chart.js, hosted on GitHub Pages.</p>",
+      },
       newsanalyzer: {
         title: "AI News Analyzer",
         body:
