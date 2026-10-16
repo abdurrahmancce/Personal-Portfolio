@@ -52,6 +52,7 @@ body.light-theme {
   --text: #12161c;
   --muted: #525b66;
   --muted-2: #7b8390;
+  --gold: #8a5f00;
 
   --teal-dim: rgba(20, 150, 140, 0.12);
   --gold-dim: rgba(180, 130, 20, 0.14);
@@ -519,6 +520,10 @@ body.light-theme .theme-toggle .icon-moon {
   text-decoration: underline;
   text-decoration-color: transparent;
   transition: text-decoration-color var(--dur-fast);
+}
+
+body.light-theme .inline-link {
+  color: #0f766e;
 }
 
 .inline-link:hover {
