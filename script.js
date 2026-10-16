@@ -390,13 +390,6 @@
     // Extra detail copy per project. Kept factual and consistent with the
     // project cards already in the page — no invented claims.
     const details = {
-      hotel: {
-        title: "Hotel Reservation System",
-        body:
-          "<p>A relational database project modeling a full hotel reservation workflow: hotels, room types, rooms, guests, staff, reservations, payments, services, reviews, and audit history.</p>" +
-          "<p><strong>Concepts applied:</strong> ER modeling, normalization, primary/foreign keys, constraints, joins, aggregate functions, subqueries, views, stored functions, triggers, and transactions.</p>" +
-          "<p><strong>My contribution:</strong> database design, SQL implementation, and documentation.</p>",
-      },
       student: {
         title: "Student Performance Prediction System",
         body:
@@ -404,23 +397,17 @@
           "<p><strong>Approach:</strong> data preprocessing and feature selection on a structured dataset of roughly 500 records, followed by classification with logistic regression.</p>",
       },
       conflict: {
-        title: "Software Requirement Conflict Detection",
+        title: "ConflictSense — Requirement Conflict Detection",
         body:
-          "<p>An ongoing, research-oriented exploration into detecting conflicting or contradictory requirements within Software Requirement Specification documents.</p>" +
-          "<p><strong>Direction:</strong> applying NLP techniques such as semantic similarity and text classification to requirement engineering problems.</p>" +
+          "<p>A research project that automatically detects and explains conflicts between requirements in Software Requirement Specification (SRS) documents.</p>" +
+          "<p><strong>Approach:</strong> NLP techniques such as named-entity recognition combined with machine-learning classification (scikit-learn) to find and explain contradictory requirements.</p>" +
           "<p>This is active research, not a finished or published result.</p>",
       },
-      lms: {
-        title: "Course Management System / Mini LMS",
+      farm: {
+        title: "Greenfield Smart Farming",
         body:
-          "<p>A learning management system for handling courses, users, and learning content end to end.</p>" +
-          "<p><strong>Stack:</strong> Django REST Framework for the API and JWT-based authentication, with a React frontend consuming the API for student and instructor workflows.</p>",
-      },
-      analytics: {
-        title: "Life Analytics Dashboard",
-        body:
-          "<p>A browser-based personal analytics dashboard for tracking daily activities across a 24-hour view, with mood tracking and a productivity heatmap.</p>" +
-          "<p><strong>Built with:</strong> vanilla HTML/CSS/JavaScript, Chart.js for visualization, and LocalStorage for offline-first persistence &mdash; no backend required.</p>",
+          "<p>A full-stack farm management web application for monitoring weather, calculating fertilizer needs, tracking farm locations, and reviewing analytics.</p>" +
+          "<p><strong>Built with:</strong> Flask and PostgreSQL on the backend, JavaScript on the frontend, and Leaflet with OpenStreetMap for location tracking, delivered as a progressive web app.</p>",
       },
       newsanalyzer: {
         title: "AI News Analyzer",
@@ -435,13 +422,6 @@
           "<p>A real-time face detection app built with Python and OpenCV, using Haar Cascade classifiers for faces, eyes, and smiles from a live webcam feed.</p>" +
           "<p><strong>Tracking:</strong> a centroid-tracking algorithm assigns stable IDs to faces across frames, with an FPS monitor and a modern UI overlay.</p>" +
           "<p><strong>Capture:</strong> manual full-frame screenshots plus an auto-snapshot mode that periodically saves cropped, per-face images.</p>",
-      },
-      weather: {
-        title: "Nimbus — Weather Dashboard",
-        body:
-          "<p>A weather dashboard built with vanilla HTML, CSS, and JavaScript, using the key-free wttr.in API so it works without any sign-up.</p>" +
-          "<p><strong>Features:</strong> city search with a &deg;C/&deg;F toggle, a scrollable hourly timeline, a 3-day forecast, and sunrise/sunset timing.</p>" +
-          "<p><strong>UI:</strong> a glassmorphism interface with themes that shift based on current weather conditions, plus recent searches saved via LocalStorage.</p>",
       },
     };
 
