@@ -709,6 +709,11 @@
     const tooltip = document.getElementById("heatmapTooltip");
     if (!grid || !fallback || !tooltip) return;
 
+    // The heatmap card uses backdrop-filter, which makes a position:fixed child
+    // position itself relative to the card instead of the viewport. Moving the
+    // tooltip to body keeps it next to the cursor.
+    document.body.appendChild(tooltip);
+
     const username = "abdurrahmancce";
     const MONTH_NAMES = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
     const MONTH_NAMES_LONG = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
