@@ -1815,3 +1815,20 @@ body.light-theme .inline-link {
     zoom: 0.9;
   }
 }
+
+/* Projects: top picks first, the rest behind a toggle */
+.projects-grid:not(.expanded) .project-extra {
+  display: none;
+}
+.projects-more {
+  display: flex;
+  justify-content: center;
+  margin-top: 28px;
+}
+.projects-more .btn {
+  background: transparent;
+  cursor: pointer;
+}
+.projects-more.hidden {
+  display: none;
+}

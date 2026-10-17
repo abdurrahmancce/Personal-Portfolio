@@ -354,6 +354,29 @@
     const emptyMsg = document.getElementById("filterEmpty");
     if (!buttons.length || !cards.length) return;
 
+    // Only the top projects show under "All"; the rest open with the toggle
+    // or automatically when a category filter is chosen.
+    const grid = document.getElementById("projectsGrid");
+    const toggle = document.getElementById("projectsToggle");
+    const toggleWrap = toggle ? toggle.parentElement : null;
+    let activeFilter = "all";
+    let userExpanded = false;
+    function syncExpanded() {
+      const open = userExpanded || activeFilter !== "all";
+      if (grid) grid.classList.toggle("expanded", open);
+      if (toggle) {
+        toggle.setAttribute("aria-expanded", String(open));
+        toggle.textContent = userExpanded ? "Show fewer projects" : "Show all 12 projects";
+      }
+      if (toggleWrap) toggleWrap.classList.toggle("hidden", activeFilter !== "all");
+    }
+    if (toggle) {
+      toggle.addEventListener("click", () => {
+        userExpanded = !userExpanded;
+        syncExpanded();
+      });
+    }
+
     buttons.forEach((btn) => {
       btn.addEventListener("click", () => {
         buttons.forEach((b) => b.classList.remove("active"));
@@ -361,6 +384,8 @@
 
         const filter = btn.dataset.filter;
         let visibleCount = 0;
+        activeFilter = filter;
+        syncExpanded();
 
         cards.forEach((card) => {
           const categories = (card.dataset.category || "").split(" ");
