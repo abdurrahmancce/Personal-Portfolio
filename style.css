@@ -1832,3 +1832,27 @@ body.light-theme .inline-link {
 .projects-more.hidden {
   display: none;
 }
+
+/* Project card cover image */
+.project-thumb {
+  margin: -28px -28px 20px;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  border-radius: var(--radius-lg) var(--radius-lg) 0 0;
+  border-bottom: 1px solid var(--border);
+}
+.project-thumb img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform var(--dur-med) var(--ease);
+}
+.project-card:hover .project-thumb img {
+  transform: scale(1.04);
+}
+@media (prefers-reduced-motion: reduce) {
+  .project-card:hover .project-thumb img {
+    transform: none;
+  }
+}
