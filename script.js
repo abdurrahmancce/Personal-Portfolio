@@ -458,6 +458,56 @@
           "<p><strong>Tracking:</strong> a centroid-tracking algorithm assigns stable IDs to faces across frames, with an FPS monitor and a modern UI overlay.</p>" +
           "<p><strong>Capture:</strong> manual full-frame screenshots plus an auto-snapshot mode that periodically saves cropped, per-face images.</p>",
       },
+      todo: {
+        title: "To-Do Pro",
+        body:
+          "<p>A modern, responsive task manager built with HTML, CSS, and JavaScript. Tasks are saved in the browser with LocalStorage, so there is no account or server.</p>" +
+          "<p><strong>Tasks:</strong> add, edit, delete, and complete tasks, with notes, due dates, and headings to group them. Each task can be tagged low, medium, or high priority.</p>" +
+          "<p><strong>Reminders:</strong> custom reminder date and time, daily or weekly repeats, a 5-minute snooze, an alarm popup, and browser notifications.</p>" +
+          "<p><strong>Dashboard &amp; search:</strong> total, completed, and pending counts with a progress bar, real-time search, and All / Pending / Completed filters.</p>" +
+          "<p><strong>Extras:</strong> drag-and-drop reordering, keyboard shortcuts (Ctrl+N, Ctrl+K, Delete, Esc), toast notifications, and light and dark themes.</p>",
+      },
+      life: {
+        title: "Life Analytics Dashboard",
+        body:
+          "<p>A browser-based personal analytics app for logging daily activities, tracking habits and goals, and reviewing the results in charts. Data stays in the browser, with no server and no account.</p>" +
+          "<p><strong>Tracking:</strong> log activities with start and end times, mood, and notes across categories such as sleep, study, work, coding, exercise, and screen time.</p>" +
+          "<p><strong>Insights:</strong> a dashboard with activity charts and weekly and monthly trends, a monthly calendar with a productivity heatmap, and productivity, health, learning, digital wellness, and consistency scores.</p>" +
+          "<p><strong>Goals &amp; data:</strong> daily minimum or maximum targets with streaks, achievement badges, JSON and CSV export, backup import, and generated reports.</p>" +
+          "<p><strong>Built with:</strong> HTML, CSS, JavaScript, Chart.js, and LocalStorage, with dark and light modes.</p>",
+      },
+      weather: {
+        title: "Nimbus \u2014 Weather Dashboard",
+        body:
+          "<p>A responsive weather dashboard built with HTML, CSS, and vanilla JavaScript. It uses the wttr.in API, which needs no API key.</p>" +
+          "<p><strong>Weather data:</strong> search by city and see temperature, humidity, wind, pressure, and visibility, with a Celsius/Fahrenheit toggle.</p>" +
+          "<p><strong>Forecast:</strong> a scrollable hourly timeline, a 3-day forecast, and sunrise and sunset times.</p>" +
+          "<p><strong>Interface:</strong> themes that change with the weather, a glassmorphism design with animations, and recent searches saved in LocalStorage.</p>",
+      },
+      authvault: {
+        title: "AuthVault",
+        body:
+          "<p>A front-end authentication project with login and registration screens, real-time form validation, and a password strength checker. It was built as a learning project.</p>" +
+          "<p><strong>How it works:</strong> registration stores the name, email, and password in the browser's LocalStorage, and login checks against that stored data. The session lasts until logout.</p>" +
+          "<p><strong>Password strength:</strong> a minimum of 8 characters, with checks for uppercase, lowercase, numbers, and special characters, rated Weak, Medium, or Strong as you type. A show/hide toggle is included.</p>" +
+          "<p><strong>Note:</strong> authentication here is client-side only, so it demonstrates the flow and is not a production-grade system. The repository also includes an optional Python demo backend (<code>server.py</code>).</p>",
+      },
+      profilefinder: {
+        title: "GitHub Profile Finder",
+        body:
+          "<p>A front-end web app that looks up any GitHub username through the GitHub REST API and presents the profile in a clean, responsive interface.</p>" +
+          "<p><strong>Shows:</strong> profile details (bio, website, location, social links), follower and following counts, and the public repositories with star and fork counts.</p>" +
+          "<p><strong>Details:</strong> search with the Enter key, an error state for unknown users, and the last searched username remembered in LocalStorage.</p>" +
+          "<p><strong>Built with:</strong> HTML, CSS, and vanilla JavaScript, practicing the Fetch API and async/await.</p>",
+      },
+      countdown: {
+        title: "Countdown Event Manager",
+        body:
+          "<p>A front-end web app for creating and tracking several countdown events at once, such as birthdays, exams, launches, or trips.</p>" +
+          "<p><strong>Events:</strong> create, edit, and delete events with a category, icon, and custom color. Timers update every second and show days, hours, minutes, and seconds, with a progress bar for the time remaining.</p>" +
+          "<p><strong>Organizing:</strong> search by title or category, filter by All, Upcoming, or Expired, and sort the list.</p>" +
+          "<p><strong>Extras:</strong> optional reminders 15 minutes, 30 minutes, 1 hour, or 1 day before an event, a confetti celebration at zero, JSON import and export, and dark and light themes saved in LocalStorage.</p>",
+      },
     };
 
     let lastFocusedEl = null;

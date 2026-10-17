@@ -1856,3 +1856,11 @@ body.light-theme .inline-link {
     transform: none;
   }
 }
+
+/* Keep GitHub / View Details / Live Demo on one row where space allows */
+.project-actions {
+  gap: 8px;
+}
+.project-actions .btn-sm {
+  padding: 9px 14px;
+}

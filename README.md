@@ -196,16 +196,22 @@ Areas:
 
 # 🚀 Featured Projects
 
-Six selected projects — the rest of my work is on [GitHub](https://github.com/abdurrahmancce?tab=repositories).
+Twelve projects, ordered by impact. More on [GitHub](https://github.com/abdurrahmancce?tab=repositories).
 
 | Project | What it is | Stack | Repo |
 |---|---|---|---|
 | **ConflictSense** | Research project that detects and explains conflicts in Software Requirement Specification (SRS) documents | Python, NLP, scikit-learn, NER | [GitHub](https://github.com/abdurrahmancce/Machine-Learning-Based-Conflict-Detection-) |
 | **Greenfield Smart Farming** | Full-stack farm management app: weather monitoring, fertilizer calculation, farm location tracking | Flask, PostgreSQL, JavaScript, Leaflet | [GitHub](https://github.com/abdurrahmancce/greenfield-smart-farming) |
+| **Expense Tracker** | Personal finance web app with Firebase login and interactive spending charts | JavaScript, Firebase, Chart.js | [GitHub](https://github.com/abdurrahmancce/expense-tracker) / [Live demo](https://abdurrahmancce.github.io/expense-tracker/) |
 | **Student Performance Prediction System** | Machine learning project predicting student academic outcomes | Python, Pandas, scikit-learn | [GitHub](https://github.com/abdurrahmancce/student-performance-prediction) |
 | **AI News Analyzer** | Desktop app that fetches live news, summarizes it with AI, and scores sentiment | Python, Tkinter, Transformers, NewsAPI | [GitHub](https://github.com/abdurrahmancce/AI-News-Analyzer) |
 | **Face Detection System** | Real-time face, eye, and smile detection from a webcam feed | Python, OpenCV | [GitHub](https://github.com/abdurrahmancce/face-detection-system) |
-| **Expense Tracker** | Personal finance web app with interactive spending charts | JavaScript, Firebase | [GitHub](https://github.com/abdurrahmancce/expense-tracker) |
+| **To-Do Pro** | Task manager with priorities, reminders, and a productivity dashboard | JavaScript, LocalStorage | [GitHub](https://github.com/abdurrahmancce/To-Do-Pro) / [Live demo](https://abdurrahmancce.github.io/To-Do-Pro/) |
+| **Life Analytics Dashboard** | Personal analytics: daily tracker, habits, goals, and charts | JavaScript, Chart.js | [GitHub](https://github.com/abdurrahmancce/Life-Tracking) / [Live demo](https://abdurrahmancce.github.io/Life-Tracking/) |
+| **Nimbus Weather Dashboard** | Weather dashboard with hourly and 3-day forecasts and weather-based themes | JavaScript, wttr.in API | [GitHub](https://github.com/abdurrahmancce/Weather-Dashboard) / [Live demo](https://abdurrahmancce.github.io/Weather-Dashboard/) |
+| **AuthVault** | Front-end authentication demo with validation and a password strength checker | JavaScript, Python | [GitHub](https://github.com/abdurrahmancce/AuthVault) / [Live demo](https://abdurrahmancce.github.io/AuthVault/) |
+| **GitHub Profile Finder** | Look up a GitHub profile, repositories, followers, and stats | JavaScript, GitHub REST API | [GitHub](https://github.com/abdurrahmancce/Github-Profile-Finder) / [Live demo](https://abdurrahmancce.github.io/Github-Profile-Finder/) |
+| **Countdown Event Manager** | Multiple live countdowns with reminders, filters, and a confetti celebration | JavaScript, LocalStorage | [GitHub](https://github.com/abdurrahmancce/Countdown-Event-Manager) / [Live demo](https://abdurrahmancce.github.io/Countdown-Event-Manager/) |
 
 ---
 
