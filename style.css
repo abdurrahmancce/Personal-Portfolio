@@ -1802,3 +1802,16 @@ body.light-theme .inline-link {
     padding: 24px;
   }
 }
+
+/* hCaptcha widget (contact form) */
+.h-captcha {
+  margin: 4px 0 16px;
+  max-width: 100%;
+  min-height: 78px;
+  overflow: hidden;
+}
+@media (max-width: 400px) {
+  .h-captcha {
+    zoom: 0.9;
+  }
+}

@@ -578,6 +578,15 @@
         return;
       }
 
+      // hCaptcha: Web3Forms' script adds a hidden "h-captcha-response" field once
+      // the widget has loaded. If it never loaded (blocked script, offline), skip the
+      // client-side check and let the server decide, so the mailto fallback still works.
+      const captchaField = form.querySelector('textarea[name="h-captcha-response"]');
+      if (captchaField && !captchaField.value) {
+        statusEl.textContent = "Please complete the captcha check before sending.";
+        statusEl.className = "form-status error";
+        return;
+      }
       // The key is still the unfilled placeholder: nothing to submit to yet.
       if (!accessKey || accessKey === "YOUR_ACCESS_KEY_HERE") {
         statusEl.innerHTML =
@@ -606,6 +615,7 @@
             message: message,
             from_name: "Abdur Rahman — Portfolio Contact Form",
             botcheck: false, // Web3Forms also rejects submissions where this is true
+            "h-captcha-response": captchaField ? captchaField.value : "",
           }),
         });
 
@@ -627,6 +637,10 @@
           '<a href="' + mailtoLink + '">Click here to send it via your email app</a> instead.';
         statusEl.className = "form-status error";
       } finally {
+        // A captcha token is single-use, so ask for a fresh one after every attempt.
+        if (window.hcaptcha && typeof window.hcaptcha.reset === "function") {
+          try { window.hcaptcha.reset(); } catch (e) { /* ignore */ }
+        }
         if (submitBtn) {
           submitBtn.disabled = false;
           submitBtn.textContent = "Send Message";
