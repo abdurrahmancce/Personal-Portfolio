@@ -231,7 +231,7 @@ The website itself is designed as an interactive developer portfolio rather than
 - ✨ Scroll animations
 - 📐 Modern spacing and layout
 
-The UI uses custom design tokens for colors, typography, spacing, borders, radii, and animation timing. :contentReference[oaicite:6]{index=6}
+The UI uses custom design tokens for colors, typography, spacing, borders, radii, and animation timing.
 
 ### ⚡ Interactions
 
@@ -248,7 +248,7 @@ The UI uses custom design tokens for colors, typography, spacing, borders, radii
 
 ### 👁️ Project Details
 
-Each featured project can be explored through an interactive details modal containing additional information about the project, technology, concepts, and contribution. :contentReference[oaicite:7]{index=7}
+Each featured project can be explored through an interactive details modal containing additional information about the project, technology, concepts, and contribution.
 
 ---
 
@@ -280,7 +280,7 @@ Accessibility is considered throughout the interface.
 - Reduced-motion support
 - Screen-reader-friendly structure
 
-The CSS explicitly handles `prefers-reduced-motion` by reducing animations and transitions when requested by the user. :contentReference[oaicite:8]{index=8}
+The CSS explicitly handles `prefers-reduced-motion` by reducing animations and transitions when requested by the user.
 
 ---
 
