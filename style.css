@@ -1864,3 +1864,20 @@ body.light-theme .inline-link {
 .project-actions .btn-sm {
   padding: 9px 14px;
 }
+
+/* Touch devices: larger tap targets for small links (WCAG 2.5.8) */
+@media (pointer: coarse) {
+  .footer-links a,
+  .footer-socials a,
+  .contact-info a,
+  .project-details-btn,
+  .filter-btn,
+  .nav-links a {
+    display: inline-flex;
+    align-items: center;
+    min-height: 44px;
+  }
+  .footer-links {
+    gap: 4px 18px;
+  }
+}
