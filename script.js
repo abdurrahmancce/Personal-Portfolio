@@ -610,8 +610,8 @@
       if (!fields.message.el.value.trim()) {
         setError("message", "Please write a message.");
         isValid = false;
-      } else if (fields.message.el.value.trim().length < 10) {
-        setError("message", "Message should be at least 10 characters.");
+      } else if (fields.message.el.value.trim().length < 2) {
+        setError("message", "Message should be at least 2 characters.");
         isValid = false;
       } else {
         setError("message", "");
