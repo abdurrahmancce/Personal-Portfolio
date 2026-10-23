@@ -145,7 +145,7 @@ I'm particularly interested in projects where **software engineering, intelligen
 |---|---|
 | 🎓 Degree | B.Sc. in Computer & Communication Engineering |
 | 🏫 University | International Islamic University Chittagong |
-| 📚 Current Semester | 6th Semester 3rd Year |
+| 📚 Expected Graduation | 2027 |
 | 📅 Academic Period | 2024 – 2027 |
 
 ---
